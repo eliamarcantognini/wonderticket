@@ -1,0 +1,119 @@
+/*.main .container form, .main .jumbotron .container {
+  max-width: 40rem;
+}*/
+
+#notifiesList, #notifiesContainer {
+  min-width: 290px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+#event-card .card-body {
+  min-height: 210px;
+}
+
+#notifiesContainer {
+  position: absolute;
+  overflow-y: scroll;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+#navbarCollapse {
+  flex-grow: 0;
+}
+
+.card-body .ticketInCart:not(:last-child) {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.carouselImg {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.carousel-content {
+  overflow: visible;
+  position: absolute;
+  z-index: 1;
+  width:100%;
+  height:100%;    
+  vertical-align: middle;
+  padding-top: 5%;
+}
+
+.carousel-content h1, .carousel-inner .carousel-caption {
+  text-align:center;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+.carousel-content > #search-list, .carousel-content li {
+  color:black;
+}
+
+.carousel-inner {
+  position: static;
+}
+
+@media (max-width: 576px) { 
+  .card-img-top {
+    height: 40vw;
+  }
+  .carousel-inner .carousel-item {
+    height: 60vw;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .card-img-top {
+    height: 20vw;
+  }
+  .carousel-inner .carousel-item {
+    height: 40vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .card-img-top {
+    height: 15vw;
+  }
+  .carousel-inner .carousel-item {
+    height: 30vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .card-img-top {
+    height: 10vw;
+  }
+  .carousel-inner .carousel-item {
+    height: 30vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     .card-img-top {
+  height: 10vw;
+  } 
+  .carousel-inner .carousel-item {
+    height: 25vw;
+  }
+}
+
+@media (min-width: 1500px) {
+.carousel-inner .carousel-item {
+  height: 20vw;
+}
+}
+
